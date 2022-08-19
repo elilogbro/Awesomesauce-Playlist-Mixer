@@ -1,0 +1,13 @@
+{
+    "songs": [
+        {
+            "id": 1,
+            "title": "San Luis",
+            "artist": "Gregory Alan Isakov",
+            "lyrics": "Oh, their eyes are shining like the sea, For you, the queen of San Luis. I'm a ghost of you, you're a ghost of me, A bird's eye view of San Luis",
+            "genre": "folk",
+            "albumImage": "https://therevue.ca/wp-content/uploads/2018/12/Gregory-Alan-Isakov-%E2%80%93-Evening-Machines.jpg",
+            "isOnTour": true
+        }
+    ]
+}
