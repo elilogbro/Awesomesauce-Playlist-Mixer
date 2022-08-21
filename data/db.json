@@ -4,10 +4,91 @@
             "id": 1,
             "title": "San Luis",
             "artist": "Gregory Alan Isakov",
-            "lyrics": "Oh, their eyes are shining like the sea, For you, the queen of San Luis. I'm a ghost of you, you're a ghost of me, A bird's eye view of San Luis",
+            "lyrics": "Weightlessness, no gravity\nWere we somewhere in-between?\nI'm a ghost of you, you're a ghost of me\nA bird's eye view of San Luis\nOh, highway boys all sleeping in\nWith their dirty mouths and broken strings\nOh, their eyes are shining like the sea\nFor you, the queen of San Luis\nI'm a ghost of you, you're a ghost of me\nA bird's eye view of San Luis\nCutting through the avenues\nI'd always find my way to you\nBeside the hook, the hammer lies\nFumbling round in the smoke\nSpending time chasing ghosts\nHold me down, hold me down, child\nHold me down, hold me down, child\nCalifornia called you queen\nWith your golden hair and magazine\nWere you somewhere in-between?\nFast asleep, a flying dream\nI'm a ghost of you, you're a ghost of me\nA bird's eye view of San Luis\nI'm a ghost of you, you're a ghost of me\nA bird's eye view of San Luis\nI'm a ghost of you, you're a ghost of me\nA bird's eye view of San Luis\nI'm a ghost of you, you're a ghost of me\nA bird's eye view of San Luis",
             "genre": "folk",
             "albumImage": "https://therevue.ca/wp-content/uploads/2018/12/Gregory-Alan-Isakov-%E2%80%93-Evening-Machines.jpg",
             "isOnTour": true
+        },
+        {
+            "id": 2,
+            "title": "Old Ties and Companions",
+            "artist": "Watchhouse",
+            "lyrics": "Old man give me endless time\nNever let these ties sever\nIt's breaking bottles in the yard\nNever still my mind again\nLike old ties and companions\nJust sitting on the fence\nThe tears we've carried through the years will change\nAnd man that's just enough\nTo keep these ghosts around those haunted fields\nBut old ties and companions\nYou and I were just passing through\nIt's a hundred thousand miles of lonely track\nHolding back tomorrow\nSomeday I'll hop along and ride it home\nLike old ties and companions\nWe never leave alone\nSo old man give me endless time never let these ties sever\nSo heaven knows and all this fooling around\nThese times won't last forever, after all",
+            "genre": "folk",
+            "albumImage": "https://m.media-amazon.com/images/I/71w9L5mwtQL._SS500_.jpg",
+            "isOnTour": true
+        },
+        {
+            "id": 3,
+            "title": "Towers",
+            "artist": "Bon Iver",
+            "lyrics": "For the love, I'd fallen on\nIn the swampy August dawn\nWhat a mischief you would bring, young darling\nWhen the onus is not all your own\nWhen you're up for it before you've grown\nWhoa-whoa\nFrom the faun forever gone\nIn the towers of your honeycomb\nI'd have tore your hair out just to climb back, darling\nWhen you're filling out your only form\nCan you tell that it's just ceremon'?\nNow you've added up to what you're from\nWhoa-whoa\nBuild your tether rain-out from your fragments\nBreak the sailor's table on your sacrum\nFuck the fiercest fables, I'm with Hagen\nFor the love, comes the burning young\nFrom the liver, sweating through your tongue\nWell, you're standing on my sternum\nDon't you climb down, darling\nOh, the sermons are the first to rest\nSmoke on Sundays when you're drunk and dressed\nOut the hollows where the swallow nests\nWhoa-whoa",
+            "genre": "indie",
+            "albumImage": "https://f4.bcbits.com/img/a1388691918_10.jpg",
+            "isOnTour": true
+        },
+        {
+            "id": 4,
+            "title": "Taro",
+            "artist": "alt-J",
+            "lyrics": "Indochina, Capa jumps Jeep\nTwo feet creep up the road\nTo photo, to record, meat lumps and war\nThey advance as does his chance, ohh\nVery yellow-white flash\nA violent wrench grips mass\nRips light, tears limbs like rags\nBurst so high, finally Capa lands\nMine is a watery pit\nPainless with immense distance\nFrom medic, from colleague, friend, enemy, foe\nHim five yards from his leg\nFrom you Taro, oh\nDo not spray into eyes\nI have sprayed you into my eyes\n3:10 p.m.\nCapa pends death, quivers, last rattles, last chokes\nAll colours and cares glaze to grey\nShriveled and stricken to dots\nThe left hand grasps what the body grasps not, ohh\nLe photographe est mort\n3.1415, alive no longer my amour\nFaded for home May of '54\nDoors open like arms, my love\nPainless with a great closeness\nTo Capa, to Capa Capa dark after nothing\nRe-united with his leg\nAnd with you, Taro, oh\nTaro, ohh\nDo not spray into eyes\nI have sprayed you into my eyes\nHey, Taro!",
+            "genre": "indie",
+            "albumImage": "https://m.media-amazon.com/images/I/91LpTcIQnKL._SS500_.jpg",
+            "isOnTour": true
+        },
+        {
+            "id": 5,
+            "title": "Heat Above",
+            "artist": "Greta Van Fleet",
+            "lyrics": "Sorrows of the Earth\nMay our tears of rain wash down to bathe you\nThis is what life is worth\nWhen the fires still burn and rage all around\nCan you hear that dreadful sound?\nFire still burning on the ground\nFollow the fearsome sound\nAs they march to battle, hear the drums pound\nWe do not fight for war\nBut to save the lives of those who do so\nCan you hear that dreadful sound?\nFire still burning on the ground\nCan you feel my love?\nRising with the heat above\nLife's the story of\nAscending to the stars as one\nMarching across the land\nIs a peaceful army joining the band\nWalking hand in hand\nTo an anthem loudly sung where they stand\nCan you hear that dreadful sound?\nFire still burning on the ground\nCan you feel my love?\nRising with the heat above\nLife's the story of\nAscending to the stars as one",
+            "genre": "rock",
+            "albumImage": "https://static.wikia.nocookie.net/greta-van-fleet/images/7/7a/Heat_Above_-_Single.jpg/revision/latest/top-crop/width/360/height/360?cb=20210218004232",
+            "isOnTour": true
+        },
+        {
+            "id": 6,
+            "title": "Only One",
+            "artist": "Yellowcard",
+            "lyrics": "Broken this fragile thing now\nAnd I can't, I can't pick up the pieces\nAnd I've thrown my words all around\nBut I can't, I can't give you a reason\nI feel so broken up (so broken up)\nAnd I give up (I give up)\nI just want to tell you so you know\nHere I go\nScream my lungs out\nTry to get to you\nYou are my only one\nI let go\nThere's just no one that gets me like you do\nYou are my only, my only one\nMade my mistakes, let you down\nAnd I can't, I can't hold on for too long\nRan my whole life in the ground\nAnd I can't, I can't get up when you're gone\nAnd something's breaking up (breaking up)\nI feel like giving up\nI won't walk out until you know\nHere I go\nScream my lungs out\nTry to get to you\nYou are my only one\nI let go\nThere's just no one who gets me like you do\nYou are my only, my only one\nHere I go\nSo dishonestly\nLeave a note\nFor you, my only one\nAnd I know you can see right through me\nSo let me go and you will find someone\nHere I go\nScream my lungs out\nTry to get to you\nYou are my only one\nI let go\nThere's just no one, no one like you\nYou are my only, my only one\nMy only one\nMy only one\nMy only one\nYou are my only, my only one",
+            "genre": "rock",
+            "albumImage": "https://i.scdn.co/image/ab67616d0000b273d1fd8f264564d9eef7617a45",
+            "isOnTour": true
+        },
+        {
+            "id": 7,
+            "title": "Now Or Never",
+            "artist": "Kendrick Lamar, Mary J. Blige",
+            "lyrics": "We on?\nAight\nOne, two, three, go!\nWaking up in a dream\nSleepwalking on another big stage\nYou never heard peace 'til you hear people scream\nYour name in unison, I'm so far away\nFrom the place I used to be, struggling usually\nLook at the newer me, fate pursuing me\nI can feel the energy in the air\nIt feel like I'm supposed to here\nEverywhere I go I'm getting so much love\nFans, the stars, everyone\nSayin' how they can't wait for the LP\nAnd I'm gonna blow, they believe in me\nFeel so good in what you do\nHelps somebody else get through\nThat's why I do the best I can\nBecause I know how blessed I am\nI'm so high I can touch the sky\nI know it's my time\nAnd it's now or never\nI shine so bright I light the night\nAnd it feels so right, ain't nothing better\nA fool if I take it all for granted\nA smart man if I keep my feet planted\nTo the earth 'cause the people that hurt can understand it\nYou speakin' outlandish\nI'ma show you how to make it all work\nAnother plan, it a short term goal for me\nA record sold for me\nIt's just more of and me in your ear\nFor you to hear Kendrick persevere\nDefenses I feel relentless\nAmbition with a clear vision\nTakin' off I ain't takin off these Pistons\nI'm takin' off on the inner me, you're distance\nCame across me, how much it'a cost me\nTo get you out my business\nI set a plan, it's a short term goal, no sky is the limit\nI'm past that, now pass that\nAward, not one but four\nTimes two plus yours\nI see myself performing there (K.dot)\nSold out shows where the room is packed\nSitting at the Grammy's winning five awards\nSee myself on big billboards\nTraveling around the world with endorsement deals\nCan't imagine how it feels\nThat's why I'm smiling everyday\nBecause my dream ain't far away\nI'm so high I can touch the sky\nI know it's my time\nAnd it's now or never\nI shine so bright I light the night\nAnd it feels so right, ain't nothing better\nYou looking at me and you tell me I'm blessed\nCalculated my steps, my heart, my breath\nBreathe in lungs of a victory and vividly\nYou see me when at my best, my worst\nThis verse dedicated to the days that I slept\nWith a curse research my paid dues I'm reimbursed\nI burst in the crowd with a voice and crown\nI'm a King on the prowl and I see mama smile\nAnd I vow on the tape that I'll never break\nYou can break bread with me now\nWe can all take a bow on the edge of the pedestal\nThen scream out loud that we made it off the avenue\nAnd walked that mile\nIn the darkness I often sit back\nAnd get lost in the rap that I wrote\nWhen you told me that it spoke to your soul\nI was talking to you\nI was walking it through every ghetto\nTell success hello\nWe here\nAnd I'm so happy I cry\n'Cause I can't believe\nAll the things I ever wanted\nAre finally happening for me\nAnd it's so surreal\nThat I almost feel\nThat any minute I can wake up\nFrom this fantasy\nWhen you pray so hard\nAnd you've come so far\nAnd you know that it's the time for you lift your bar\nAnd I'm gonna do it\nWatch me\nI'm so high I can touch the sky\nI know it's my time\nAnd it's now or never\nI shine so bright I light the night\nAnd it feels so right, ain't nothing better\nI'm so high I can touch the sky\nI know it's my time\nAnd it's now or never\nI shine so bright I light the night\nAnd it feels so right, ain't nothing better",
+            "genre": "hip-hop",
+            "albumImage": "https://i.scdn.co/image/ab67616d0000b273d58e537cea05c2156792c53d",
+            "isOnTour": true
+        },
+        {
+            "id": 8,
+            "title": "Hide",
+            "artist": "Juice WRLD x Seezyn",
+            "lyrics": "Need a drink?\n(Hoo, ayy, ayy)\nFound my home (Ooh, ooh)\nShe made me leave the thrills at home and I'm fine\nReally think I found my home\nShorty make me feel at home\nShe made me leave the thrills at home\nAnd I'm fine with it\nShe really made me lose control\nI'ma let my love unfold\nWe're just two lost souls\nBut we're fine with it\nThere's love at my front door, short notice\nYou're not like the same girls I notice\nThink I met my soul mate\nYeah, I know it\nWhen it gets dark outside\nIn you I confide\nYou help me face my demons\nI won't hide, hide\nGirls like you are hard to find\nI hope you don't mind\nIf I give you the time of your life, life, life\nReally think I found my home\nShorty make me feel at home\nShe made me leave the thrills at home\nAnd I'm fine with it\nShe really made me lose control\nI'ma let my love unfold\nWe're just two lost souls\nBut we're fine with it \nLife is not the same\nWith your pictures in my frame\nNow that you're here\nI want nothing to change\nYou pick me up when I'm down\nI need you around\nYou seen me through my darkest times\nGirl, is there something that you try to find?\nYou brought meaning to my life \nAll because of you, I do right\nBecause of you, I have a purpose\nFight for the world, because you're worth it\nReally think I found my home\nShorty make me feel at home\nShe made me leave the thrills at home\nAnd I'm fine with it\nShe really made me lose control\nI'ma let my love unfold\nWe're just two lost souls\nBut we're fine with it",
+            "genre": "hip-hop",
+            "albumImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq4UZpGvE5B0_1PYg-m4v0-EYE4jW6UsK_hZq6QLswcg&s",
+            "isOnTour": false
+        },
+        {
+            "id": 9,
+            "title": "Electricity",
+            "artist": "DubVision, Otto Knows, & Alex Aris",
+            "lyrics": "I feel you\nYou feel me\nElectricity\nI'm with you\nForever\nThis is all I need\nI feel you\nYou feel me\nElectricity\nI'm with you\nForever\nThis is all I need\nI feel you\nYou feel me\nElectricity\nI'm with you\nForever\nThis is all I need\nI feel you\nYou feel me\nElectricity\nI'm with you\nForever\nThis is all I need\nTake a ride\nOcean drive\nUs, together I know we'll survive\nElectrified\nBy your side\nWith you close\nI'm gonna stay alive\nI feel you\nYou feel me\nElectricity\nI'm with you\nForever\nThis is all I need\nI feel you\nYou feel me\nElectricity\nI'm with you\nForever\nThis is all I need\nThis is all I need\nThis is all I need",
+            "genre": "electronic",
+            "albumImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCf4xt6hI72iZTFEAt7PtgOJCo7zr7jlEkVtYlraOVEA&s",
+            "isOnTour": true
+        },
+        {
+            "id": 10,
+            "title": "Next To Me",
+            "artist": "Rufus Du Sol",
+            "lyrics": "And when the lights come down\nI wanna feel you standing next to me\nAnd can you hear me out?\nThere's a lifetime in front of me\nAnd when my time runs out\nI wanna feel you standing next to me\nBaby, I knew this time would arrive\nI knew this time would come\nEver since I first looked in your eyes\nI said, You're the one\nOh my God, oh my God\nTell me I'm the one\nOh my God, oh my God\nI wanna feel you standing next to me\nLate in the evening when the sun comes down\nUnder the starlight as the birds fly by\nI see the dust fill the twilight skies\nI feel the warmth of your hand in mine\nIt's in the air, it's in the air\nIt's in the air we breathe\nIt's all around, it's all around us now\nAnd when the lights come down\nI wanna feel you standing next to me\nAnd can you hear me out?\nThere's a lifetime in front of me\nAnd when my time runs out\nI wanna feel you standing next to me\nBaby, I knew this time would arrive\nI knew this time would come\nEver since I first looked in your eyes\nI said, You're the one\nOh my God, oh my God\nTell me I'm the one\nOh my God, oh my God\nI wanna feel you standing next to me\nAnd when the lights come down\nI wanna feel you standing next to me",
+            "genre": "electronic",
+            "albumImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToSUjHHpVhDjKd5mW34vkBUs1qlDw9MJVRpUL-AmXtfA&s",
+            "isOnTour": false
         }
     ]
 }
