@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './NavBar';
 import About from './About';
@@ -8,7 +8,6 @@ import FavoriteSongList from './FavoriteSongList';
 
 function App() {
 
-  // const [page, setPage] = useState("/")
 
   return (
     <div>
