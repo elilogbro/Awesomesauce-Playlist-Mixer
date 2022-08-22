@@ -13,10 +13,8 @@ function About() {
     return(
         <div className='new-line'>
             <h1>Welcome to your AwesomeSauce Playlist Mixer!</h1>
-                <p> 
-                {arr} 
-                </p>
-                <p>All of your playlist needs in one stop. Let your music obsession take over. </p>
+            <p>{arr}</p>
+            <p>All of your playlist needs in one stop. Let your music obsession take over. </p>
         </div>
     )
 }
