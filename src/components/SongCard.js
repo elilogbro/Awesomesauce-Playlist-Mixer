@@ -1,7 +1,6 @@
 import React from 'react';
 
 function SongCard({ song }) {
-    console.log(song)
 
     return (
         <div>
