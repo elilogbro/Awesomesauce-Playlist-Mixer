@@ -12,12 +12,20 @@ code {
     monospace;
 }
 
-.default-link {
+.links {
   text-decoration: none;
-  display: flex;
-  flex-direction: row;
+  display: inline-block;
+  margin: 1rem 2rem;
+  padding: 10px;
+  /* flex-direction: row; */
+  text-align: center;
   width: 100%;
   height: 100%;
-  justify-content: center;
+}
+
+.new-line {
+  display: flex;
+  flex-direction:column;
+  text-align: center;
 }
 
