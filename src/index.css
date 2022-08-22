@@ -46,3 +46,25 @@ code {
   justify-content: center;
 }
 
+.genre-navbar {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: auto;
+  width: 100%;
+  flex-direction: row;
+  font-size: 16px;
+}
+
+nav:active {
+  border-style: solid;
+}
+
+.songs-container {
+  /* display: flex; */
+  text-align: center;
+}
+
+.songlist-container {
+  display: flex;
+  flex-direction: column;
+}
