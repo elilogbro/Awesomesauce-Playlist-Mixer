@@ -1,9 +1,10 @@
 import React from 'react';
 
 function Form() {
+
+
     return (
         <div className="form-container">
-            <button>Show Form</button>
             <form>
                 <input type="text" name="artist" placeholder="Artist"/>
                 <input type="text" name="title" placeholder="Song Title"/>

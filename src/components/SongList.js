@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SongCard from "./SongCard"
 import Form from "./Form";
 
 function SongList({ songs, filterGenre }) {
     const songList = songs.map(song => <SongCard key={song.id} song={song} />)
+
+    const [showForm, setShowForm] = useState(true)
+
+    const handleForm = () => {
+        setShowForm(!showForm)
+    }
 
     return (
         <div className="songs-container">
@@ -16,7 +22,8 @@ function SongList({ songs, filterGenre }) {
                     <nav onClick={filterGenre}>Electronic</nav>
             </div>
             <div className="form-songlist-container">
-                <Form />
+                <button onClick={handleForm}>{showForm ? "Hide Form" : "Show Form"}</button>
+               {showForm ? <Form /> : null }
                 <div className="songlist-container">
                     {songList}
                 </div>
