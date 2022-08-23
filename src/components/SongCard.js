@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
 
-function SongCard({ song }) {
+function SongCard({ song, handleDeletedSong }) {
 
     const [lyricsToggle, setLyricsToggle] = useState(true)
+    
     const handleLyricsToggle = () => {
         setLyricsToggle(!lyricsToggle)
+    }
+
+    const handleDelete = () => {
+        fetch(`http://localhost:3000/songs/${song.id}`, {
+            method: "DELETE"
+        })
+        handleDeletedSong(song.id)
     }
 
     return (
@@ -15,6 +23,7 @@ function SongCard({ song }) {
             <button>Add to Favorites 💖</button>
             <button onClick={handleLyricsToggle}>{lyricsToggle ? "Show Lyrics 🎶" : "Hide Lyrics 🎧"}</button>
             {lyricsToggle ? null: song.lyrics}
+            <button onClick={handleDelete}>Delete ❌</button>
             
 
         </div>

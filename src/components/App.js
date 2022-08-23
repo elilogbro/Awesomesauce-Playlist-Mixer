@@ -33,7 +33,7 @@ function App() {
         <NavLinks />
           <Routes>
             <Route exact path="/" element={<About />} />
-            <Route path="/songs" element={<SongList addNewSong={addNewSong} songs={filteredSongs} setSongGenre={setSongGenre}/>} />
+            <Route path="/songs" element={<SongList setSongs={setSongs} addNewSong={addNewSong} songs={filteredSongs} setSongGenre={setSongGenre}/>} />
             <Route path="/favorite-songs" element={<FavoriteSongList />} />
           </Routes>
       </BrowserRouter>

@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import SongCard from "./SongCard"
 import Form from "./Form";
  
-function SongList({ songs, setSongGenre, addNewSong }) {
-    const songList = songs.map(song => <SongCard key={song.id} song={song} />)
- 
+function SongList({ songs, setSongGenre, addNewSong, setSongs }) {
     const [showForm, setShowForm] = useState(true)
-   
+    
+    const handleDeletedSong = (id) => {
+        setSongs(songs.filter(song => id !== song.id))
+      }
+
+    const songList = songs.map(song => <SongCard  key={song.id} song={song} handleDeletedSong={handleDeletedSong} />)
  
     const handleForm = () => {
         setShowForm(!showForm)
