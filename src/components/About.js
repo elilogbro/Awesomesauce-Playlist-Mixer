@@ -2,7 +2,8 @@ import React from 'react';
 
 function About() {
      
-   
+    document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1445375011782-2384686778a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmFuZHxlbnwwfHwwfHw%3D&w=1000&q=80')";
+
 
 
     return(

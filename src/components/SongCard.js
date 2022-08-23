@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function SongCard({ song, handleDeletedSong }) {
+function SongCard({ song, handleDeletedSong, handleFavorites }) {
 
     const [lyricsToggle, setLyricsToggle] = useState(true)
     
@@ -20,10 +20,10 @@ function SongCard({ song, handleDeletedSong }) {
             <img src={song.albumImage} alt="album"/>
             <h3>{song.title}</h3>
             <h4>{song.artist}</h4>
-            <button>Add to Favorites 💖</button>
+            <button onClick={() => handleFavorites(song)}>Add to Favorites 💖</button>
             <button onClick={handleLyricsToggle}>{lyricsToggle ? "Show Lyrics 🎶" : "Hide Lyrics 🎧"}</button>
             {lyricsToggle ? null: song.lyrics}
-            <button onClick={handleDelete}>Delete ❌</button>
+            <button onClick={() => handleDelete(song.id)}>Delete ❌</button>
         </div>
     )
 }
