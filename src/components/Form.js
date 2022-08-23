@@ -1,4 +1,4 @@
-import React, { useState }, { useState } from 'react';
+import React, { useState } from 'react';
 
 function Form({ addNewSong }) {
 
