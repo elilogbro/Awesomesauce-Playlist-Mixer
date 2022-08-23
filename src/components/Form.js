@@ -49,13 +49,15 @@ function Form({ addNewSong }) {
         })
                 .then(res => res.json())
                 .then(addNewSong(newSong))
+
+        setTitle("")
+        setArtist("")
+        setLyrics("")
+        setAlbumImage("")
+        // setIsOnTour(null)
     }
 
-        // setTitle("")
-        // setArtist("")
-        // setLyrics("")
-        // setAlbumImage("")
-        // setIsOnTour(null)
+        
 
     return (
         <div>
@@ -100,14 +102,9 @@ function Form({ addNewSong }) {
                 value={lyrics}
                 onChange={handleLyrics}
                 />
-                <p>Is the artist on tour?</p>
-                <label>
-                    True
-                    <input type="checkbox" name="true"/>
-                </label>
-                <label>
-                    False
-                    <input type="checkbox" name="false"/>
+                <p></p>
+                <label>Is the artist on tour?
+                    <input type="checkbox" name="tour"/>
                 </label>
                 <br />
                 <input type="submit" value="Submit" />

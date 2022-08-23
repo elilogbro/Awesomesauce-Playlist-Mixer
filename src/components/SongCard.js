@@ -12,7 +12,7 @@ function SongCard({ song, handleDeletedSong }) {
         fetch(`http://localhost:3000/songs/${song.id}`, {
             method: "DELETE"
         })
-        handleDeletedSong(song.id)
+            handleDeletedSong(song.id)
     }
 
     return (
@@ -24,8 +24,6 @@ function SongCard({ song, handleDeletedSong }) {
             <button onClick={handleLyricsToggle}>{lyricsToggle ? "Show Lyrics 🎶" : "Hide Lyrics 🎧"}</button>
             {lyricsToggle ? null: song.lyrics}
             <button onClick={handleDelete}>Delete ❌</button>
-            
-
         </div>
     )
 }

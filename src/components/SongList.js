@@ -3,6 +3,7 @@ import SongCard from "./SongCard"
 import Form from "./Form";
  
 function SongList({ songs, setSongGenre, addNewSong, setSongs }) {
+
     const [showForm, setShowForm] = useState(true)
     
     const handleDeletedSong = (id) => {
@@ -18,6 +19,7 @@ function SongList({ songs, setSongGenre, addNewSong, setSongs }) {
     return (
         <div className="songs-container">
             <div className="genre-navbar">
+                    <nav onClick={(e) => setSongGenre("")}>ALL</nav>
                     <nav onClick={(e) => setSongGenre(e.target.innerText)}>ROCK</nav>
                     <nav onClick={(e) => setSongGenre(e.target.innerText)}>FOLK</nav>
                     <nav onClick={(e) => setSongGenre(e.target.innerText)}>INDIE</nav>
