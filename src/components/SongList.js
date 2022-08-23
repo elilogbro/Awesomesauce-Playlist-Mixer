@@ -18,7 +18,6 @@ function SongList({ songs, filterGenre }) {
             <div className="form-songlist-container">
                 <Form />
                 <div className="songlist-container">
-                    <h1>AwesomeSauce Song List</h1>
                     {songList}
                 </div>
             </div>
