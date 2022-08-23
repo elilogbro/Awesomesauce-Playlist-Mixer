@@ -80,11 +80,11 @@ nav:active {
   display: flex;
   flex-direction: column;
   width: 300px;
+  padding: 5px;
 }
 
 .form-songlist-container {
   display: flex;
-  flex-direction: row;
   padding-top: 50px;
 }
 
@@ -110,21 +110,26 @@ nav:active {
 #form-button {
   display: flex;
   justify-content: center;
-  min-width: 170px;
+  width: 226px;
 }
 
 .form-inputs {
   display: flex;
   text-align: center;
+  width: 218px;
 }
 
 .songlist-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   padding-left: 4px;
 }
 
 .songcard-container h3, h4 {
   margin: 4px;
+}
+
+#primary-nav {
+  border: 3px solid rgb(209, 106, 74);
+  border-radius: 8px;
 }

@@ -58,19 +58,21 @@ function Form({ addNewSong }) {
         // setIsOnTour(null)
 
     return (
-        <div className="form-container">
+        <div>
             <form onSubmit={handleForm}>
                 <input 
                 type="text" 
                 name="artist" 
                 placeholder="Artist"
                 value={artist}
+                className="form-inputs"
                 onChange={handleArtist}
                 />
                 <input 
                 type="text" 
                 name="title" 
                 placeholder="Song Title"
+                className="form-inputs"
                 value={title}
                 onChange={handleTitle}
                 />
@@ -78,6 +80,7 @@ function Form({ addNewSong }) {
                 type="text" 
                 name="genre" 
                 placeholder="Genre"
+                className="form-inputs"
                 value={genre}
                 onChange={handleGenre}
                 />
@@ -85,6 +88,7 @@ function Form({ addNewSong }) {
                 type="text" 
                 name="image-url" 
                 placeholder="Image-URL"
+                className="form-inputs"
                 value={albumImage}
                 onChange={handleAlbumImage}
                 />
@@ -92,10 +96,10 @@ function Form({ addNewSong }) {
                 type="text" 
                 name="lyrics" 
                 placeholder="Lyrics"
+                className="form-inputs"
                 value={lyrics}
                 onChange={handleLyrics}
                 />
-                <br />
                 <p>Is the artist on tour?</p>
                 <label>
                     True

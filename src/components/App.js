@@ -11,8 +11,7 @@ import FavoriteSongList from './FavoriteSongList';
 function App() {
 
   const [songs, setSongs] = useState([])
-  const [filteredSongs, setFilteredSongs] = useState([])
-  const [genres, setGenres] = useState("All")
+  const [songGenre, setSongGenre] = useState("")
 
     useEffect(() => {
         fetch('http://localhost:3000/songs')
@@ -26,18 +25,15 @@ function App() {
             setSongs([...songs, newSong])
         }
 
-
-    const filterGenre = (e) => {
-            setFilteredSongs(songs.filter(song => song.genre === e.target.innerText.toLowerCase()))
-    }
-
+  let filteredSongs = songs.filter(song => song.genre.toLowerCase().includes(songGenre.toLowerCase()))
+  
   return (
     <div>
       <BrowserRouter>
         <NavLinks />
           <Routes>
             <Route exact path="/" element={<About />} />
-            <Route path="/songs" element={<SongList addNewSong={addNewSong} songs={filteredSongs} filterGenre={filterGenre}/>} />
+            <Route path="/songs" element={<SongList addNewSong={addNewSong} songs={filteredSongs} setSongGenre={setSongGenre}/>} />
             <Route path="/favorite-songs" element={<FavoriteSongList />} />
           </Routes>
       </BrowserRouter>
