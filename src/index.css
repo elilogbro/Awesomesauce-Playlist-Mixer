@@ -61,11 +61,23 @@ nav:active {
 }
 
 .songs-container {
-  /* display: flex; */
+  display: flex;
   text-align: center;
+  flex-direction: column;
 }
 
 .songlist-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-songlist-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+}
+
+.form-container {
   display: flex;
   flex-direction: column;
 }
