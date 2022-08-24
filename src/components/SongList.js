@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import SongCard from "./SongCard"
 import Form from "./Form";
+import Search from "./Search"
  
-function SongList({ songs, setSongGenre, addNewSong, favorite, setFavorite, handleDeletedSong }) {
+function SongList({ songs, setSongGenre, addNewSong, favorite, setFavorite, handleDeletedSong, search, setSearch}) {
     
     document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/4b/11/73/4b11736a517898a9d6a4459d75f01880.jpg')";
 
@@ -47,13 +48,15 @@ function SongList({ songs, setSongGenre, addNewSong, favorite, setFavorite, hand
             </div>
             <div className="form-songlist-container">
                 <div className="form-container">
-               
                     <button id="form-button" onClick={handleForm}>{showForm ? "Hide Form" : "Show Form"}</button>
                     <br />
                     {showForm ? <Form addNewSong={addNewSong} /> : null }
                 </div>
-                <div className="songlist-container">
-                    {songList}
+                <div className="search-songlist-container">
+                    <Search search={search} setSearch={setSearch}/>
+                    <div className="songlist-container">
+                        {songList}
+                    </div>
                 </div>
             </div>
         </div>
