@@ -13,6 +13,7 @@ function App() {
   const [songs, setSongs] = useState([])
   const [songGenre, setSongGenre] = useState("")
   const [favorite, setFavorite] = useState([])
+  const [search, setSearch] = useState("")
 
     useEffect(() => {
         fetch('http://localhost:3000/songs')
@@ -26,14 +27,14 @@ function App() {
             setSongs([...songs, newSong])
         }
 
+        const handleDeletedSong = (id) => {
+          setSongs(songs.filter(song => id !== song.id))
+          setFavorite(favorite.filter(song => id !== song.id))
+          console.log('from app')
+        }
+        
   let filteredSongs = songs.filter(song => song.genre.toLowerCase().includes(songGenre.toLowerCase()))
-
-  const handleDeletedSong = (id) => {
-    setSongs(songs.filter(song => id !== song.id))
-    setFavorite(favorite.filter(song => id !== song.id))
-    console.log('from app')
-  }
-    
+  let filteredSearch = filteredSongs.filter(songs => songs.lyrics.toLowerCase().includes(search.toLowerCase()))
    
   return (
     <div>
@@ -44,11 +45,13 @@ function App() {
             <Route path="/songs" element={<SongList 
             setSongs={setSongs} 
             addNewSong={addNewSong} 
-            songs={filteredSongs} 
+            songs={filteredSearch} 
             setSongGenre={setSongGenre} 
             favorite={favorite} 
             setFavorite={setFavorite} 
-            handleDeletedSong={handleDeletedSong}/>}
+            handleDeletedSong={handleDeletedSong}
+            search={search}
+            setSearch={setSearch}/>}
             />
             <Route path="/favorite-songs" element={<FavoriteSongList 
             favorite={favorite} 
