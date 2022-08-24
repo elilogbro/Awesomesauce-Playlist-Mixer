@@ -26,7 +26,7 @@ function SongCard({ song, handleDelete, isInFavorites, handleFavorites}) {
                 { !isInFavorites && <button className="rainbow-button" onClick={() => handleFavorites(song)}>Add to Favorites 💖</button> }
                 { isInFavorites && <p>{song.isOnTour ? "Artist is on tour!" : "Artist is not on tour!"} </p>}
                 <button className="rainbow-button" onClick={handleLyricsToggle}>{lyricsToggle ? "Show Lyrics 🎶" : "Hide Lyrics 🎧"}</button>
-                {lyricsToggle ? null: song.lyrics}
+                {lyricsToggle ? null: <p>{song.lyrics}</p>}
                 <button className="rainbow-button" onClick={() => handleDelete(song.id)}>Delete ❌</button>
                 </div>
             : null}
