@@ -11,7 +11,11 @@ function FavoriteSongList({favorite, handleDeletedSong, handleFavorites}) {
 
     return(
         <div className="favorites-container">
-            {renderFavorites}
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+            </style>
+            <h1>The Best of the Best Sauce</h1>
+           <ul className="favorites-cards">{renderFavorites}</ul> 
         </div>
     )
 }

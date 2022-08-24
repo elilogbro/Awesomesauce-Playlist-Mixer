@@ -8,9 +8,12 @@ function About() {
 
     return(
         <div className='new-line'>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+            </style>
             <h1>Welcome to your AwesomeSauce Playlist Mixer!</h1>
             <p> <b>Follow the links above to guide you through your current song list. </b>
-            
+            <br />
         <br /> Can't remember the lyrics to a song on the tip of your tongue? There's a link for that. 
         <br /> Wanna add a new song? There's a form for that. 
         <br /> Have a favorite you just gotta pin? There's a way to do that too!

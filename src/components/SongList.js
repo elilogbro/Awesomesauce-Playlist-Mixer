@@ -31,17 +31,22 @@ function SongList({ songs, setSongGenre, addNewSong, setSongs, favorite, setFavo
  
     return (
         <div className="songs-container">
+             <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
+                </style>
             <div className="genre-navbar">
-                    <nav onClick={(e) => setSongGenre("")}>ALL</nav>
-                    <nav onClick={(e) => setSongGenre(e.target.innerText)}>ROCK</nav>
-                    <nav onClick={(e) => setSongGenre(e.target.innerText)}>FOLK</nav>
-                    <nav onClick={(e) => setSongGenre(e.target.innerText)}>INDIE</nav>
-                    <nav onClick={(e) => setSongGenre(e.target.innerText)}>HIP-HOP</nav>
-                    <nav onClick={(e) => setSongGenre(e.target.innerText)}>ELECTRONIC</nav>
+                    <nav onClick={(e) => setSongGenre("")}>All</nav>
+                    <nav onClick={(e) => setSongGenre(e.target.innerText)}>Rock</nav>
+                    <nav onClick={(e) => setSongGenre(e.target.innerText)}>Folk</nav>
+                    <nav onClick={(e) => setSongGenre(e.target.innerText)}>Indie</nav>
+                    <nav onClick={(e) => setSongGenre(e.target.innerText)}>Hip-hop</nav>
+                    <nav onClick={(e) => setSongGenre(e.target.innerText)}>Electronic</nav>
             </div>
             <div className="form-songlist-container">
                 <div className="form-container">
+               
                     <button id="form-button" onClick={handleForm}>{showForm ? "Hide Form" : "Show Form"}</button>
+                    <br />
                     {showForm ? <Form addNewSong={addNewSong} /> : null }
                 </div>
                 <div className="songlist-container">

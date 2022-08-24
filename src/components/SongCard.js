@@ -17,15 +17,20 @@ function SongCard({ song, handleDeletedSong, handleFavorites }) {
 
     return (
         <div className="songcard-container">
+             <style>
+                @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+            </style>
             <img src={song.albumImage} alt="album"/>
             <h3>{song.title}</h3>
             <h4>{song.artist}</h4>
-            <button onClick={() => handleFavorites(song)}>Add to Favorites 💖</button>
-            <button onClick={handleLyricsToggle}>{lyricsToggle ? "Show Lyrics 🎶" : "Hide Lyrics 🎧"}</button>
+            <button className="rainbow-button" onClick={() => handleFavorites(song)}>Add to Favorites 💖</button>
+            <button className="rainbow-button" onClick={handleLyricsToggle}>{lyricsToggle ? "Show Lyrics 🎶" : "Hide Lyrics 🎧"}</button>
             {lyricsToggle ? null: song.lyrics}
-            <button onClick={() => handleDelete(song.id)}>Delete ❌</button>
+            <button className="rainbow-button" onClick={() => handleDelete(song.id)}>Delete ❌</button>
+          
         </div>
     )
 }
 
 export default SongCard;
+

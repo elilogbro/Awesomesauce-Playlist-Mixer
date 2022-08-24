@@ -4,6 +4,9 @@ function NavBar() {
    
     return (
         <div className="links-container">
+         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+        </style>
             <span className="links">
                 <NavLink to="/"
                     style={({ isActive}) =>
