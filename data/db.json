@@ -179,6 +179,15 @@
       "genre": "indie",
       "albumImage": "https://t2.genius.com/unsafe/409x409/https%3A%2F%2Fimages.genius.com%2Fdaeb45ea0e9b03d4b8c0ff12f3e4259b.1000x1000x1.jpg",
       "isOnTour": true
+    },
+    {
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "genre": "rock",
+      "lyrics": "Is this the real life? Is this just fantasy? Caught in a landslide, no escape from reality Open your eyes, look up to the skies and see I'm just a poor boy, I need no sympathy Because I'm easy come, easy go, little high, little low Any way the wind blows doesn't really matter to me, to me",
+      "albumImage": "https://t2.genius.com/unsafe/409x409/https%3A%2F%2Fimages.genius.com%2Fff9ddef65ab95da61354ce587748e2e9.600x600x1.png",
+      "isOnTour": false,
+      "id": 21
     }
   ]
 }

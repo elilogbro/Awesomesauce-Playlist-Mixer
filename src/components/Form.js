@@ -2,13 +2,6 @@ import React, { useState } from 'react';
 
 function Form({ addNewSong }) {
 
-    // const [title, setTitle] = useState("")
-    // const [artist, setArtist] = useState("")
-    // const [genre, setGenre] = useState("")
-    // const [lyrics, setLyrics] = useState("")
-    // const [albumImage, setAlbumImage] = useState("")
-    // const [isOnTour, setIsOnTour] = useState(false)
-
     const [formData, setFormData] = useState({
         title: "",
         artist: "",
@@ -18,41 +11,9 @@ function Form({ addNewSong }) {
         isOnTour: false,
     })
 
-    // const handleTitle = (e) => {
-    //     setTitle(e.target.value)
-    // }
-
-    // const handleArtist = (e) => {
-    //     setArtist(e.target.value)
-    // }
-
-    // const handleGenre = (e) => {
-    //     setGenre(e.target.value)
-    // }
-
-    // const handleLyrics = (e) => {
-    //     setLyrics(e.target.value)
-    // }
-
-    // const handleAlbumImage = (e) => {
-    //     setAlbumImage(e.target.value)
-    // }
-
-    // const handleIsOnTour = (e) => {
-    //     setIsOnTour(e.target.checked)
-    // }
-
     const handleForm = (e) => {
         e.preventDefault()
-        // let newSong = {
-        //     id: "",
-        //     title: title,
-        //     artist: artist,
-        //     lyrics,
-        //     genre,
-        //     albumImage,
-        //     isOnTour
-        // }
+ 
         fetch("http://localhost:3000/songs", {
             method: "POST",
             headers: {
@@ -63,7 +24,14 @@ function Form({ addNewSong }) {
                 .then(res => res.json())
                 .then(addNewSong(formData))
 
-        setFormData("")
+        setFormData({
+            title: "",
+            artist: "",
+            genre: "",
+            lyrics: "", 
+            albumImage: "",
+            isOnTour: false,
+        })
    
     }
 
@@ -75,12 +43,14 @@ function Form({ addNewSong }) {
             ...formData, [key] : value
         })
     } 
-    
-    
 
     return (
-        <div>
+        <div className='form-box'>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+            </style>
             <form onSubmit={handleForm}>
+                <label>Add A New Song</label>
                 <input 
                 type="text" 
                 name="artist" 
@@ -126,12 +96,14 @@ function Form({ addNewSong }) {
                     <input 
                     type="checkbox" 
                     name="isOnTour"
+                    className="check-box"
                     checked={formData.isOnTour}
                     onChange={handleChange}
                     />
                 </label>
-                <br />
-                <input type="submit" value="Submit" />
+                <button type="submit" value="Submit" id="submitBtn" className='submitBtn'>Submit</button>
+                {/* <br /> */}
+                {/* <input className="submit-btn" type="submit" value="Submit" /> */}
             </form>
         </div>
     )
