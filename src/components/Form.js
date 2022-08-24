@@ -101,6 +101,7 @@ function Form({ addNewSong }) {
                     onChange={handleChange}
                     />
                 </label>
+                <br />
                 <button type="submit" value="Submit" id="submitBtn" className='submitBtn'>Submit</button>
                 {/* <br /> */}
                 {/* <input className="submit-btn" type="submit" value="Submit" /> */}
