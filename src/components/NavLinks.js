@@ -4,9 +4,9 @@ function NavBar() {
    
     return (
         <div className="links-container">
-         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-        </style>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+            </style>
             <span className="links">
                 <NavLink to="/"
                     style={({ isActive}) =>
@@ -14,8 +14,8 @@ function NavBar() {
                     { color: '#000000'}
                     : { color: '#000000',
                     textDecoration: 'none'
-                    }}
-                    >About
+                    }}>
+                    About
                 </NavLink>
                 <NavLink to="/songs"
                     style={({ isActive}) =>
@@ -23,8 +23,8 @@ function NavBar() {
                     { color: '#000000'}
                     : { color: '#000000',
                     textDecoration: 'none'
-                    }}
-                    >Songs
+                    }}>
+                    Songs
                 </NavLink>
                 <NavLink to="/favorite-songs"
                     style={({ isActive}) =>
@@ -32,9 +32,9 @@ function NavBar() {
                     { color: '#000000'}
                     : { color: '#000000',
                     textDecoration: 'none'
-                    }}
-                    >Favorite Songs
-            </NavLink>
+                    }}>
+                    Favorite Songs
+                </NavLink>
             </span>
         </div>
     )
