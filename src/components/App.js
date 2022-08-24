@@ -9,7 +9,7 @@ import FavoriteSongList from './FavoriteSongList';
 
 
 function App() {
-
+  
   const [songs, setSongs] = useState([])
   const [songGenre, setSongGenre] = useState("")
   const [favorite, setFavorite] = useState([])
@@ -31,17 +31,30 @@ function App() {
   const handleDeletedSong = (id) => {
     setSongs(songs.filter(song => id !== song.id))
     setFavorite(favorite.filter(song => id !== song.id))
+    console.log('from app')
   }
-
-  
+    
+   
   return (
     <div>
       <BrowserRouter>
         <NavLinks />
           <Routes>
             <Route exact path="/" element={<About />} />
-            <Route path="/songs" element={<SongList setSongs={setSongs} addNewSong={addNewSong} songs={filteredSongs} setSongGenre={setSongGenre} favorite={favorite} setFavorite={setFavorite} handleDeletedSong={handleDeletedSong}/>} />
-            <Route path="/favorite-songs" element={<FavoriteSongList favorite={favorite} handleDeletedSong={handleDeletedSong}/>} />
+            <Route path="/songs" element={<SongList 
+            setSongs={setSongs} 
+            addNewSong={addNewSong} 
+            songs={filteredSongs} 
+            setSongGenre={setSongGenre} 
+            favorite={favorite} 
+            setFavorite={setFavorite} 
+            handleDeletedSong={handleDeletedSong}/>}
+            />
+            <Route path="/favorite-songs" element={<FavoriteSongList 
+            favorite={favorite} 
+            setFavorite={setFavorite}
+            />}
+            />
           </Routes>
       </BrowserRouter>
     </div>

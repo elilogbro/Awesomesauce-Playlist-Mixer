@@ -2,17 +2,12 @@ import React, { useState } from 'react';
 import SongCard from "./SongCard"
 import Form from "./Form";
  
-function SongList({ songs, setSongGenre, addNewSong, setSongs, favorite, setFavorite, handleDeletedSong }) {
+function SongList({ songs, setSongGenre, addNewSong, favorite, setFavorite, handleDeletedSong }) {
     
     document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/4b/11/73/4b11736a517898a9d6a4459d75f01880.jpg')";
 
     const [showForm, setShowForm] = useState(true)
     
-    // const handleDeletedSong = (id) => {
-    //     setSongs(songs.filter(song => id !== song.id))
-    //     setFavorite(favorite.filter(song => id !== song.id))
-    //     console.log("ID:", id)
-    //   }
 
       const handleFavorites = (show) => {
         if (favorite.includes(show)) {
@@ -23,7 +18,15 @@ function SongList({ songs, setSongGenre, addNewSong, setSongs, favorite, setFavo
         }
     }
 
-    const songList = songs.map(song => <SongCard  key={song.id} song={song} handleDeletedSong={handleDeletedSong} handleFavorites={handleFavorites}/>)
+    const handleDelete = (id) => {
+        fetch(`http://localhost:3000/songs/${id}`, {
+            method: "DELETE"
+        })
+            handleDeletedSong(id)
+            console.log('from songlist')
+    }
+
+    const songList = songs.map(song => <SongCard  key={song.id} song={song} isInFavorites={false} handleDelete={handleDelete} handleFavorites={handleFavorites}/>)
  
     const handleForm = () => {
         setShowForm(!showForm)
