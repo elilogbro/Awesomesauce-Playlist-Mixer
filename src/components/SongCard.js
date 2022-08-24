@@ -28,7 +28,7 @@ function SongCard({ song, handleDelete, isInFavorites, handleFavorites}) {
                 <button className="rainbow-button" onClick={handleLyricsToggle}>{lyricsToggle ? "Show Lyrics 🎶" : "Hide Lyrics 🎧"}</button>
                 {lyricsToggle ? null: song.lyrics}
                 <button className="rainbow-button" onClick={() => handleDelete(song.id)}>Delete ❌</button>
-            </div>
+                </div>
             : null}
           
         </div>
