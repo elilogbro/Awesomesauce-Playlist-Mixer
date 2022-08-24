@@ -9,6 +9,7 @@ function Form({ addNewSong }) {
         lyrics: "", 
         albumImage: "",
         isOnTour: false,
+        isFavorited: false
     })
 
     const handleForm = (e) => {
@@ -31,6 +32,7 @@ function Form({ addNewSong }) {
             lyrics: "", 
             albumImage: "",
             isOnTour: false,
+            isFavorited: false
         })
    
     }
@@ -91,7 +93,6 @@ function Form({ addNewSong }) {
                 value={formData.lyrics}
                 onChange={handleChange}
                 />
-                <p></p>
                 <label>Is the artist on tour?
                     <input 
                     type="checkbox" 
@@ -103,8 +104,6 @@ function Form({ addNewSong }) {
                 </label>
                 <br />
                 <button type="submit" value="Submit" id="submitBtn" className='submitBtn'>Submit</button>
-                {/* <br /> */}
-                {/* <input className="submit-btn" type="submit" value="Submit" /> */}
             </form>
         </div>
     )

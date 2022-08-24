@@ -32,10 +32,16 @@ function App() {
           setFavorite(favorite.filter(song => id !== song.id))
           console.log('from app')
         }
+
+        const handleUpdatedFavorite = (updatedSong) => {
+          const updateSong = songs.map(song => song.id === updatedSong.id ? updatedSong : song)
+          setSongs(updateSong)
+        }
         
   let filteredSongs = songs.filter(song => song.genre.toLowerCase().includes(songGenre.toLowerCase()))
   let filteredSearch = filteredSongs.filter(songs => songs.lyrics.toLowerCase().includes(search.toLowerCase()))
-   
+  let favoritedSong =  songs.filter(song => song.isFavorited === true)
+
   return (
     <div>
       <BrowserRouter>
@@ -51,11 +57,13 @@ function App() {
             setFavorite={setFavorite} 
             handleDeletedSong={handleDeletedSong}
             search={search}
-            setSearch={setSearch}/>}
+            setSearch={setSearch}
+            handleUpdatedFavorite={handleUpdatedFavorite}/>}
             />
             <Route path="/favorite-songs" element={<FavoriteSongList 
-            favorite={favorite} 
+            favorite={favoritedSong} 
             setFavorite={setFavorite}
+            handleUpdatedFavorite={handleUpdatedFavorite}
             />}
             />
           </Routes>
