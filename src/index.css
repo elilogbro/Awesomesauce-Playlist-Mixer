@@ -281,7 +281,7 @@ code {
   flex-wrap: wrap;
   flex-direction: row;
   padding-left: 4px;
-  min-width: 100%;
+  width: auto;
   height: auto;
 }
 
