@@ -48,7 +48,7 @@
       "genre": "rock",
       "albumImage": "https://www.cevirce.com/en/translate/wp-content/uploads/2021/04/greta-van-fleet-heat-above-lyrics-1-1200x1200.jpg",
       "isOnTour": true,
-      "isFavorited": true
+      "isFavorited": false
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "genre": "rock",
       "albumImage": "https://i.scdn.co/image/ab67616d0000b273d1fd8f264564d9eef7617a45",
       "isOnTour": true,
-      "isFavorited": true
+      "isFavorited": false
     },
     {
       "id": 7,
@@ -199,16 +199,6 @@
       "albumImage": "https://t2.genius.com/unsafe/409x409/https%3A%2F%2Fimages.genius.com%2Fdaeb45ea0e9b03d4b8c0ff12f3e4259b.1000x1000x1.jpg",
       "isOnTour": true,
       "isFavorited": false
-    },
-    {
-      "title": "Bohemian Rhapsody",
-      "artist": "Queen",
-      "genre": "rock",
-      "lyrics": "Is this the real life? Is this just fantasy? Caught in a landslide, no escape from reality Open your eyes, look up to the skies and see I'm just a poor boy, I need no sympathy Because I'm easy come, easy go, little high, little low Any way the wind blows doesn't really matter to me, to me",
-      "albumImage": "https://t2.genius.com/unsafe/409x409/https%3A%2F%2Fimages.genius.com%2Fff9ddef65ab95da61354ce587748e2e9.600x600x1.png",
-      "isOnTour": false,
-      "isFavorited": false,
-      "id": 21
     }
   ]
 }

@@ -1,12 +1,11 @@
 import React from 'react';
 import SongCard from './SongCard'
 
-function FavoriteSongList({favorite, setFavorite, handleUpdatedFavorite}) {
+function FavoriteSongList({ favoritedSong, handleUpdatedFavorite}) {
 
     document.body.style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkNTBAb-8-L9kCYaSSqdJRbDM2NTNTFMK1gg&usqp=CAU')"
 
     const handleDeletedFavorite = (id) => {
-        setFavorite(favorite.filter(song => id !== song.id))
 
         fetch(`http://localhost:3000/songs/${id}`, {
             method: 'PATCH',
@@ -23,7 +22,7 @@ function FavoriteSongList({favorite, setFavorite, handleUpdatedFavorite}) {
         console.log('no favorites button if isInFavorites is true')
     }
 
-    const renderFavorites = favorite.map(song => {
+    const renderFavorites = favoritedSong.map(song => {
         return (
             <SongCard
                 key={song.id}

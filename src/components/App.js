@@ -5,14 +5,10 @@ import About from './About';
 import SongList from './SongList';
 import FavoriteSongList from './FavoriteSongList';
 
-
-
-
 function App() {
   
   const [songs, setSongs] = useState([])
   const [songGenre, setSongGenre] = useState("")
-  const [favorite, setFavorite] = useState([])
   const [search, setSearch] = useState("")
 
   useEffect(() => {
@@ -29,7 +25,6 @@ function App() {
 
   const handleDeletedSong = (id) => {
     setSongs(songs.filter(song => id !== song.id))
-    setFavorite(favorite.filter(song => id !== song.id))
   }
 
   const handleUpdatedFavorite = (updatedSong) => {
@@ -53,8 +48,7 @@ function App() {
                 addNewSong={addNewSong} 
                 songs={filteredSearch} 
                 setSongGenre={setSongGenre} 
-                favorite={favorite} 
-                setFavorite={setFavorite} 
+                favoritedSong={favoritedSong}
                 handleDeletedSong={handleDeletedSong}
                 search={search}
                 setSearch={setSearch}
@@ -62,8 +56,7 @@ function App() {
               />
             <Route path="/favorite-songs"
               element={<FavoriteSongList 
-                favorite={favoritedSong} 
-                setFavorite={setFavorite}
+                favoritedSong={favoritedSong}
                 handleUpdatedFavorite={handleUpdatedFavorite}
               />}
             />

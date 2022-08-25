@@ -3,18 +3,17 @@ import SongCard from "./SongCard"
 import Form from "./Form";
 import Search from "./Search"
  
-function SongList({ songs, setSongGenre, addNewSong, favorite, setFavorite, handleDeletedSong, search, setSearch, handleUpdatedFavorite}) {
+function SongList({ songs, setSongGenre, addNewSong, favoritedSong, handleDeletedSong, search, setSearch, handleUpdatedFavorite}) {
     
     document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/4b/11/73/4b11736a517898a9d6a4459d75f01880.jpg')";
 
     const [showForm, setShowForm] = useState(true)
 
     const handleFavorites = (song) => {
-        if (favorite.includes(song)) {
+        if (favoritedSong.includes(song)) {
             console.log("song is already in favorites")
         }
         else {
-            setFavorite([...favorite, song])
             fetch(`http://localhost:3000/songs/${song.id}`, {
                 method: 'PATCH',
                 headers: {
