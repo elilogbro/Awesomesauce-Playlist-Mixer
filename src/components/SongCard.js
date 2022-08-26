@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ExternalLink } from 'react-external-link';
 
 function SongCard({ song, handleDelete, isInFavorites, handleFavorites}) {
 
@@ -13,6 +14,7 @@ function SongCard({ song, handleDelete, isInFavorites, handleFavorites}) {
         setDetails(!details)
     }
 
+    // console.log()
     return (
         <div className="songcard-container">
              <style>
@@ -24,14 +26,27 @@ function SongCard({ song, handleDelete, isInFavorites, handleFavorites}) {
                 <h3>{song.title}</h3>
                 <h4>{song.artist}</h4>
                     { !isInFavorites && 
-                        <button className="rainbow-button" onClick={() => handleFavorites(song)}><span>Add to Favorites</span></button>
+                        <button className="rainbow-button" onClick={() => handleFavorites(song)}>
+                            <span>Add to Favorites</span>
+                        </button>
                     }
                     { isInFavorites &&
-                        <p id="tour">{song.isOnTour ? "Artist is on tour!" : "Artist is not on tour!"} </p>
+                        <p id="tour">
+                            {song.isOnTour ? "Artist is on tour!" : "Artist is not on tour!"} 
+                        </p>
                     }
-                    <button className="rainbow-button" onClick={handleLyricsToggle}><span>{ lyricsToggle ? "Show Lyrics" : "Hide Lyrics" }</span></button>
-                    { lyricsToggle ? null: <p>{song.lyrics}</p> }
-                <button className="rainbow-button" onClick={() => handleDelete(song.id)}><span>Delete</span></button>
+                    <button className="rainbow-button" onClick={handleLyricsToggle}>
+                            <span>{ lyricsToggle ? "Show Lyrics" : "Hide Lyrics" }</span>
+                    </button>
+                    { lyricsToggle ? null: <p>{song.lyrics}</p> }   
+                    <ExternalLink 
+                        href={song.video} 
+                        className="rainbow-button">
+                            <span>Video</span>
+                    </ExternalLink>
+                <button className="rainbow-button" onClick={() => handleDelete(song.id)}>
+                        <span>Delete</span>
+                </button>
                 </div>
                 : null
             }

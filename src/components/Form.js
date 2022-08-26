@@ -4,11 +4,13 @@ import React, { useState } from 'react';
 function Form({ addNewSong }) {
 
     const [formData, setFormData] = useState({
+        id:"",
         title: "",
         artist: "",
         genre: "",
         lyrics: "", 
         albumImage: "",
+        video: "",
         isOnTour: false,
         isFavorited: false
     })
@@ -34,6 +36,7 @@ function Form({ addNewSong }) {
                 genre: "",
                 lyrics: "", 
                 albumImage: "",
+                video: "",
                 isOnTour: false,
                 isFavorited: false
             })
@@ -87,6 +90,14 @@ function Form({ addNewSong }) {
                     placeholder="Image-URL"
                     className="form-inputs"
                     value={formData.albumImage}
+                    onChange={handleChange}
+                />
+                <input 
+                    type="text" 
+                    name="video" 
+                    placeholder="Video"
+                    className="form-inputs"
+                    value={formData.video}
                     onChange={handleChange}
                 />
                 <input 
