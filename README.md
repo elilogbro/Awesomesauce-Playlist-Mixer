@@ -1,7 +1,8 @@
 How to open app in browser:
 
-1. Open terminal in VSCode
-2. Enter command `json-server --watch data/db.json`
-3. Open a second terminal
-4. Enter command `npm start`
-5. Interact with application & enjoy!
+1. Open folder in VSCode
+2. Open terminal in VSCode
+3. Enter command `json-server --watch data/db.json`
+4. Open a second terminal
+5. Enter command `npm start`
+6. Interact with application & enjoy!
